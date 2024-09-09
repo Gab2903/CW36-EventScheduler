@@ -37,33 +37,39 @@ const PostStuff = () => {
 
   return (
     <div>
-      For registered users only
-      <form onSubmit={handleSubmit}>
+      <h1 className="my-2 p-2">Create a Event!</h1>
+      <form
+        onSubmit={handleSubmit}
+        className="grid max-w-96 gap-4 mx-auto font-semibold"
+      >
         <input
           type="text"
           name="title"
           placeholder="title"
+          className="input input-bordered capitalize hover:border-[#535bf2]"
           value={formData.title}
           onChange={handleChange}
         />
-        <br />
         <input
           type="date"
           name="date"
           placeholder="date"
+          className="input input-bordered uppercase hover:border-[#535bf2]"
           value={formData.date}
           onChange={handleChange}
         />
-        <br />
         <input
           type="text"
           name="location"
           placeholder="location"
+          className="input input-bordered capitalize hover:border-[#535bf2]"
           value={formData.location}
           onChange={handleChange}
         />
         <br />
-        <button>Submit</button>
+        <button className="font-bold hover:shadow-md hover:shadow-[#535bf2]">
+          Add to event calender
+        </button>
       </form>
     </div>
   );

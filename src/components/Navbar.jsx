@@ -8,22 +8,31 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <ul>
-          <li>
-            <NavLink to={"/"}>Home</NavLink>
+        <ul className="flex text-lg p-4 space-x-2">
+          <li className="p-2">
+            <NavLink
+              to={"/"}
+              // style={({ isActive }) => {
+              //   return {
+              //     color: isActive ? "red" : "",
+              //   };
+              // }}
+            >
+              Home
+            </NavLink>
           </li>
           {/* Wenn der user eingeloggt ist, zeige die geschützten Seiten an */}
           {user ? (
-            <li>
+            <li className="p-2">
               <NavLink to={"user/post-stuff"}>Post Stuff</NavLink>
             </li>
           ) : (
             // Wenn kein User eingeloggt ist, zeige login und signup Seiten an
             <>
-              <li>
+              <li className="p-2">
                 <NavLink to={"login"}>Login</NavLink>
               </li>
-              <li>
+              <li className="p-2">
                 <NavLink to={"signup"}>Sign Up</NavLink>
               </li>
             </>
