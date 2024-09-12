@@ -9,8 +9,10 @@ const SignUp = () => {
 
   const navigate = useNavigate();
 
-  const handleChange = (e) =>
+  const handleChange = (e) => {
+    console.log(e.target);
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
