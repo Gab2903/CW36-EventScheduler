@@ -16,7 +16,7 @@ const SignUp = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(import.meta.env.VITE_API_URL + "/api/users", {
+      const res = await fetch("http://localhost:3001/api/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -32,27 +32,36 @@ const SignUp = () => {
   };
 
   return (
-    <div>
-      Sign up for our awsome service
+    <div className="form-container">
+      <h2>Sign up for our awsome service</h2>
+      <br />
       <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          name="email"
-          placeholder="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
+        <div className="form-control">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </div>
         <br />
-        <input
-          type="password"
-          name="password"
-          placeholder="password"
-          value={formData.password}
-          onChange={handleChange}
-        />
+
+        <div className="form-control">
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Your Password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+        </div>
+
         <br />
         <button>Submit</button>
       </form>
+      <br />
+      <p>Alread Have Account Please Sign In</p>
     </div>
   );
 };
