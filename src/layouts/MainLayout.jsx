@@ -9,7 +9,8 @@ const MainLayout = () => {
       <AuthContextProvider>
         <Navbar />
         <Outlet />
-        <footer>I&apos;m the footer</footer>
+        <br />
+        <footer>&copy; 2024</footer>
       </AuthContextProvider>
     </>
   );
