@@ -63,7 +63,7 @@ const SignUp = () => {
         <button>Submit</button>
       </form>
       <br />
-      <p>Alread Have Account Please Sign In</p>
+      <p>Already Have Account? Please go to Login!</p>
     </div>
   );
 };

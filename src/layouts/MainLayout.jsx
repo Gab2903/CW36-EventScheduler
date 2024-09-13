@@ -13,7 +13,7 @@ const MainLayout = () => {
         <Navbar />
         <Outlet />
         <br />
-        <footer>&copy; 2024</footer>
+        <footer>&copy; SUIG 2024</footer>
       </AuthContextProvider>
     </>
   );

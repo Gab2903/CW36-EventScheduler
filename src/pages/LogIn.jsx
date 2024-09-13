@@ -66,7 +66,7 @@ const LogIn = () => {
       </form>
       <br />
 
-      <p> Don't Have Any Account Please Sign Up</p>
+      <p> Don't have a account yet? Please visit Sign Up!</p>
     </div>
   );
 };
