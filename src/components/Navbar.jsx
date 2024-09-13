@@ -39,7 +39,14 @@ const Navbar = () => {
           )}
         </ul>
         {/* Wenn ein user eingeloggt ist, zeige den Logout-Button an */}
-        {user && <button onClick={logout}>Logout</button>}
+        {user && (
+          <button
+            onClick={logout}
+            className="bg-[#4848b6] p-2 my-4 rounded-lg font-bold hover:shadow-md hover:shadow-[#535bf2]"
+          >
+            Logout
+          </button>
+        )}
       </nav>
     </header>
   );

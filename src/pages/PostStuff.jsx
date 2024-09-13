@@ -57,7 +57,7 @@ const PostStuff = () => {
 
   return (
     <div>
-      <h1 className="my-2 p-2">Create a Event 🥳</h1>
+      <h1 className="my-2 p-2">Create a Event!</h1>
       <form
         onSubmit={handleSubmit}
         className="grid max-w-96 gap-4 mx-auto font-semibold"

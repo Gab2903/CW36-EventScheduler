@@ -23,11 +23,11 @@ const EventsList = () => {
         {events.map((event) => (
           <div
             key={event.id}
-            className="bg-gray-800 text-white rounded-lg shadow-lg p-4 flex flex-col items-center text-center cursor-pointer"
+            className="bg-gray-800 text-[#d5c3aa] rounded-lg shadow-lg p-4 flex flex-col items-center text-center cursor-pointer"
             onClick={() => handleCardClick(event)}
           >
             <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
-            <p className="text-gray-300">
+            <p className="text-[#d5c3aa]">
               {new Date(event.date).toLocaleDateString()}
             </p>
           </div>

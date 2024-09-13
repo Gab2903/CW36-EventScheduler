@@ -12,7 +12,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #d5c3aa;
   background-color: #242424;
 
   font-synthesis: none;
@@ -20,7 +20,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/*  ---Something added*/
+
 a {
   font-weight: 500;
   /* color: #646cff; */
@@ -40,14 +40,14 @@ body {
   display: flex;
   flex-direction: column;
   place-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #ddd;
+  background-color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 .form-container {
-  background-color: #fff;
+  background-color: #1f2937;
   width: 450px;
   padding: 2rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -63,7 +63,7 @@ body {
 }
 .form-control input {
   width: 100%;
-  border: 1px solid#ddd;
+  border: 1px solid#1f2937;
   font-family: inherit;
   font-size: 1.2rem;
   padding: 0.75rem 2rem;
@@ -76,7 +76,7 @@ form button {
   outline: none;
   border: none;
   font-family: inherit;
-  color: #fff;
+  color: #d5c3aa;
   padding: 1.2rem, 0;
   margin-top: 1rem;
   font-size: 1.2rem;

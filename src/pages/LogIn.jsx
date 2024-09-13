@@ -55,7 +55,7 @@ const LogIn = () => {
         <div className="form-control">
           <input
             type="password"
-            name="pasword"
+            name="password"
             placeholder="Enter Your Password"
             value={formData.password}
             onChange={handleChange}
